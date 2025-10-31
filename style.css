@@ -1,21 +1,29 @@
 body {
   font-family: Tahoma, sans-serif;
   direction: rtl;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #121212;
+  color: #f5c518; /* طلایی */
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #0077cc;
-  color: white;
+  background-color: #1e1e1e;
+  color: #f5c518;
   padding: 20px;
   text-align: center;
+  border-bottom: 2px solid #f5c518;
 }
 
 section {
   padding: 20px;
+}
+
+h2 {
+  color: #f5c518;
+  border-bottom: 1px solid #f5c518;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .gallery {
@@ -28,13 +36,20 @@ section {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  margin: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 8px;
+  border: 2px solid #f5c518;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(245, 197, 24, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 .video iframe {
   max-width: 100%;
-  border: none;
+  border: 2px solid #f5c518;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(245, 197, 24, 0.3);
 }
