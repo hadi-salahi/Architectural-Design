@@ -1,0 +1,40 @@
+body {
+  font-family: Tahoma, sans-serif;
+  direction: rtl;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.video iframe {
+  max-width: 100%;
+  border: none;
+}
